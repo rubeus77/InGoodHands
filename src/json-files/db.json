@@ -1,0 +1,54 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "rafal",
+            "pass": "qwerty"
+        }
+    ],
+    "organizations": [
+        {
+            "id": 1,
+            "name": "Siemacha",
+            "organizationsType": 1,
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "thingsType":[
+        {
+            "id": 1,
+            "type": "ubrania"
+        },
+        {
+            "id": 2,
+            "type": "jedzenie"
+        },
+        {
+            "id": 3,
+            "type": "meble"
+        }
+    ],
+    "organizationsType":[
+        {
+            "id": 1,
+            "type": "Fundacja"
+        },
+        {
+            "id": 2,
+            "type": "Organizacja pozarządowa"
+        },
+        {
+            "id": 3,
+            "type": "Lokalna zbiórka"
+        }
+    ],
+    "app":{
+        "totalPacks": 0,
+        "totalHelpsCouner": 0,
+        "totalFundationsHelped": 0
+    }
+}
