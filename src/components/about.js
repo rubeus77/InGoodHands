@@ -6,7 +6,7 @@ class About extends Component{
         return(
             <div className="About">
                 <div className="About-left">
-                    <Ornament text={"O nas"}/>
+                    <Ornament text={<h2>O nas</h2>}/>
                     <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
                     <div className="About-sign"></div>
                 </div>
