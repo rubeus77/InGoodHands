@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class LogIn extends Component{
+class Menu extends Component{
     render(){
         return(
             <>
@@ -9,4 +9,4 @@ class LogIn extends Component{
     }
 }
 
-export default LogIn;
+export default Menu;
