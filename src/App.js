@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import PageHeader from "./components/page-header";
 //import YellowBar from "./components/yellow-bar";
 //import Steps from "./components/steps";
@@ -14,22 +14,21 @@ import About from "./components/about";
 //   NavLink,
 // } from 'react-router-dom';
 
+import "./App.scss";
 
-import './App.scss';
-
-class App extends Component{
-  render(){
-    return(
+class App extends Component {
+  render() {
+    return (
       <React.Fragment>
-        <PageHeader/>
+        <PageHeader />
         {/*
         <YellowBar/>
         <Steps/> */}
-        <About/>
+        <About />
         {/* <Fundations/>
         <Contact/> */}
       </React.Fragment>
-    )
+    );
   }
 }
 

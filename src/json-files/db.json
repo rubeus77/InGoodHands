@@ -50,5 +50,16 @@
         "totalPacks": 0,
         "totalHelpsCouner": 0,
         "totalFundationsHelped": 0
-    }
+    },
+    "menu":[
+        {
+            "name": "Start",
+            "href": "/",
+            "to": "home"
+        },{
+            "name": "O nas",
+            "href": "/about lub #about",
+            "to": "about"
+        }
+    ]
 }
