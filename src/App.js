@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import "./App.scss";
 
 class App extends Component {
@@ -9,13 +8,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <PageHeader />
-        {/*
-        <YellowBar/>
-        <Steps/> */}
-        <About />
-        {/* <Fundations/>
-        <Contact/> */}
+        
       </React.Fragment>
     );
   }
