@@ -3,7 +3,8 @@ import InfoBox from './info-box';
 
 class YellowBar extends Component{
     state = {
-        data: null
+        helpInNumbers:[],
+        helpNames:[]
     }
 
     // Zapytać czy lepiej fetchować czy przesyłac w propsach
@@ -11,18 +12,17 @@ class YellowBar extends Component{
         fetch("http://localhost:3001/app")
         .then(res => res.json())
         .then(data => {
-            console.log ("z yelloBar steState: "+ {...data});
             this.setState({
-              data: {...data} 
+              helpInNumbers: data.helpInNumbers,
+              helpNames: data.helpNames
             });
-            console.log("this.state.data: "+this.state.data)
           })
         .catch(err => alert(err));
     }
     render() {
         return (
-            <div >
-                {/*this.state.data!=null && this.state.data.map( elem => <InfoBox key={elem} info={elem}/>)*/}
+            <div className="Yellow-box">
+                {this.state.helpInNumbers.map( (elem, ind) => <InfoBox key={ind} helpInNumbers={elem} helpNames={this.state.helpNames[ind]} />)}
             </div>
         )
     }
