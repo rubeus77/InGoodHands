@@ -5,27 +5,38 @@ import NotLogged from './components/not-logged';
 
 class App extends Component {
   state = {
-    data: null,
-    session: false
+    session: null
   }
 
   componentDidMount() {
     fetch("http://localhost:3001/app").then(res => res.json())
       .then(data => {
         this.setState({
-          data,
           session: data.session
         });
+        console.log("po fetch: "+this.state.session)
       })
       .catch(err => alert(err));
   }
-  
+  handleLogin = () =>{
+    this.setState({
+      session: true
+    })
+  }
+  handleLogout = () =>{
+    this.setState({
+      session: false
+    })
+  }
   render() {
-    return (
-      <React.Fragment>
-        {this.state.isSession?<Logged/>:<NotLogged data={this.state.data}/>}
-      </React.Fragment>
-    );
+    console.log("zaraz za render: "+this.state.session)
+    if(this.state.session!==null){
+      return(
+        this.state.session?<Logged log={this.handleLogout}/>:<NotLogged log={this.handleLogin}/>
+      )
+    }else{
+      return null;
+    }
   }
 }
 

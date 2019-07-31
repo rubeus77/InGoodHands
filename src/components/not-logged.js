@@ -8,7 +8,7 @@ class NotLogged extends Component{
         console.log(this.props.data);
         return(
             <>
-                <PageHeader/>
+                <PageHeader log={this.props.log}/>
                 <YellowBar/>
                 <About/>
             </>

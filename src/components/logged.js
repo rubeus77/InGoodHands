@@ -5,6 +5,7 @@ class Logged extends Component{
         return(
             <>
             Zalogowany
+            <button onClick={this.props.log}>Wyloguj</button>
             </>
         )
     }
