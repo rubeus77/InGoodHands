@@ -1,0 +1,36 @@
+.About {
+  width: 100%;
+  height: 760px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  }
+.About-left {
+  width: 500px;
+  height: 500px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.About p {
+  padding: 10px;
+  text-align: center;
+}
+.About-sign {
+  width: 200px;
+  height: 100px;
+  background-image: url("./assets/images/signature.png");
+  background-size: cover;
+  align-self: flex-end;
+}
+.About-img {
+  margin: 20px;
+  width: 50%;
+  align-self: center;
+  background-image: url("./assets/images/about.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

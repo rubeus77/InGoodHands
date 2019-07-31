@@ -47,9 +47,9 @@
         }
     ],
     "app":{
-        "totalPacks": 0,
-        "totalHelpsCouner": 0,
-        "totalFundationsHelped": 0
+        "helpInNumbers":[10, 6, 7],
+        "helpNames":["Oddanych worków", "Wspartych organizacji", "Zorganizowanych zbiórek"],
+        "session": false
     },
     "menu":[
         {
