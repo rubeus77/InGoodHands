@@ -1,0 +1,98 @@
+.Contact {
+    background-color: #efefef;
+    background-image: url('./assets/images/form-bg.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+
+    .message{
+        position: absolute;
+        margin-right: 20px;
+        right: 0;
+        top:0;
+        width: 30%;
+        height: 100%;   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            align-self: flex-start;
+            margin-top: 40px;
+        }
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            div {
+                width: 100%;
+            }
+        }
+        input {
+            margin-top: 30px;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid gray;
+        }
+        input::placeholder{
+            padding-left: 20px;
+        }
+        input[name="name"] {
+            width: calc( 50% - 5px );
+            margin-right: 5px; 
+        }
+        input[name="email"] {
+            width: calc( 50% - 5px );
+            margin-left: 5px;
+        }
+        input[name="message"] {
+            width: 100%;
+        }
+        button {
+            align-self: center;
+            margin-top: 40px;
+            background-color: transparent;
+            padding: 10px 15px;
+            border: 1px solid gray;
+        }
+    }
+    
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+
+        p {
+            width: 300px;  
+            padding: 10px;  
+            align-self: center;
+        }
+        .links {
+            padding: 10px;
+            margin-right: 40px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            a {
+                padding: 5px;
+            }
+            img {
+                width: 30px;
+            }
+        }
+    }
+    .errors-box {
+        list-style: none;
+        color: red;
+        background-color: lightpink;
+        padding: 15px;
+        border-radius: 10px;
+    }
+}
+
