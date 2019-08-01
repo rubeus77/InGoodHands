@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Ornament from "./ornament";
+import imgAbout from "../assets/images/about.png"
 
 class About extends Component {
   render() {
@@ -14,7 +15,9 @@ class About extends Component {
           </p>
           <div className="About-sign" />
         </div>
-        <div className="About-img" />
+        <div className="About-img">
+          <img src={imgAbout} alt="About foto" />
+        </div>
       </div>
     );
   }
