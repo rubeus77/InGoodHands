@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PageHeader from './page-header';
 import YellowBar from './yellow-bar';
 import About from './about';
+import Contact from "./contact";
 
 class NotLogged extends Component{
     render(){
@@ -11,6 +12,7 @@ class NotLogged extends Component{
                 <PageHeader log={this.props.log}/>
                 <YellowBar/>
                 <About/>
+                <Contact/>
             </>
         )
     }
