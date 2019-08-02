@@ -1,0 +1,57 @@
+.Steps {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .steps-middle-box {
+        width: 960px;
+        margin: 20px auto;
+        background-color: #efefef;
+        display: flex;
+        justify-content: space-around;
+    }
+    button {
+        font-size: 2em;
+        padding: 20px 30px;
+        background-color: white;
+        border: 1px solid grey;
+        margin: 20px auto;
+    }
+}
+
+.Step-box {
+    padding: 20px;
+    width: 151px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .top {
+        width: 150px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            text-align: center;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .divider {
+        height: 1px;
+        border: 1px solid gray;
+        width: 80%;
+        margin: 10px auto;
+    }
+    .bottom-text {
+        letter-spacing: -1px;
+        font-weight: 300;
+        font-size: 0.9em;
+        text-align: center;
+    }
+}

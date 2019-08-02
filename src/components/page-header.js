@@ -7,10 +7,6 @@ class PageHeader extends Component {
   render() {
     return (
       <header>
-        <nav>
-          <LogIn log={this.props.log}/>
-          <Menu />
-        </nav>
         <div className="header-info">
           <Ornament
             text={
