@@ -4,6 +4,7 @@ import PageHeader from './page-header';
 import YellowBar from './yellow-bar';
 import Steps from './steps';
 import About from './about';
+import Functions from './fundations-list';
 import Contact from "./contact";
 
 class NotLogged extends Component{
@@ -16,6 +17,7 @@ class NotLogged extends Component{
                 <YellowBar/>
                 <Steps/>
                 <About/>
+                <Functions />
                 <Contact/>
             </>
         )
