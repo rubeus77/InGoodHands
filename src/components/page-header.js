@@ -7,18 +7,24 @@ class PageHeader extends Component {
   render() {
     return (
       <header>
-        <LogIn log={this.props.log}/>
-        <Menu />
-        <Ornament
-          text={
-            <>
-              <h1>Zacznij pomagać!</h1>
-              <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
-            </>
-          }
-        />
-        <button>Oddaj rzeczy</button>
-        <button> Zorganizuj zbiórkę</button>
+        <nav>
+          <LogIn log={this.props.log}/>
+          <Menu />
+        </nav>
+        <div className="header-info">
+          <Ornament
+            text={
+              <React.Fragment>
+                <h1>Zacznij pomagać!</h1>
+                <h1>Oddaj niechciane rzeczy w zaufane ręce</h1>
+              </React.Fragment>
+            }
+          />
+          <div className="header-buttons">
+            <button><p>Oddaj</p><p>rzeczy</p></button>
+            <button><p>Zorganizuj</p><p>zbiórkę</p></button>
+          </div>
+        </div>
       </header>
     );
   }
