@@ -1,19 +1,33 @@
 import React, { Component } from 'react';
 import Ornament from './ornament';
+import FundationBox from './fundation-box';
 
 class Fundations extends Component {
     state = {
-        list:[],
-        fetchData:null,
-        pageNumber:0,
-        organizationType:null
+        list: [],
+        fetchData: null,
+        pageNumber: [],
+        organizationType: null,
+        arrWithThreeOrganizations: [],
+        thingsType:[]
     }
     componentDidMount () {
         fetch("http://localhost:3001/organizationsType").then(res => res.json())
         .then(data => {
           this.setState({
             organizationType: data
-          },() => console.log(this.state.organizationType));
+          },() => {
+              this.handleButtons(0);
+              //this.handlePages(0);
+          });
+        })
+        .catch(err => alert(err));
+
+        fetch("http://localhost:3001/thingsType").then(res => res.json())
+        .then(data => {
+          this.setState({
+            thingsType: data
+          });
         })
         .catch(err => alert(err));
     }
@@ -25,9 +39,26 @@ class Fundations extends Component {
             .then( data => {
                 this.setState({
                     fetchData: data
-                }, () => console.log(this.state.fetchData));
+                }, () => {
+                    //TODO: kod podziału na strony
+                    console.log(this.state.fetchData)
+                    let count = Math.floor(this.state.fetchData.length / 3) + 1;
+                    let pages = [];
+                    for( let i=0; i<count; i++){
+                        pages.push(i+1);
+                    }
+                    this.setState({
+                        pageNumber: pages
+                    }, () => this.handlePages(0))
+                });
             })
             .catch( err => alert(err) )
+    }
+
+    handlePages = (param) => {
+        this.setState({
+            arrWithThreeOrganizations: this.state.fetchData.slice(param * 3, (param * 3)+3)
+        })
     }
     render () {
         return (
@@ -41,9 +72,9 @@ class Fundations extends Component {
                 </div>
                 <div className="bottom-box">
                     <ul>
-
+                        {this.state.arrWithThreeOrganizations.map( (elem,ind) => <li><FundationBox key={ind} info={elem} thingsType={this.state.thingsType}/></li> )}
                     </ul>
-                    {this.state.pageNumber!==0?"przyciski":null}
+                    {this.state.pageNumber!==0 && this.state.pageNumber.map( (elem, ind) => <button key={ind} onClick={ () => this.handlePages(ind)}>{elem}</button>)}
                 </div>
             </div>
         )
