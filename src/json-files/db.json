@@ -7,11 +7,218 @@
             "pass": "qwerty"
         }
     ],
-    "organizations": [
+    "fundations": [
         {
             "id": 1,
-            "name": "Siemacha",
+            "name": "Fundacja Siemacha",
             "organizationsType": 1,
+            "about": "Fundacja wspierająca dzieci z domów dziecka",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 2,
+            "name": "Fundacja 'Dbam o Zdrowie'",
+            "organizationsType": 1,
+            "about": "Celi i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 3,
+            "name": "Fundacja 'Dla dzieci'",
+            "organizationsType": 1,
+            "about": "Cel i misja: Pomoc dzieciom ubogim",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 4,
+            "name": "Fundacja 'Bez domu'",
+            "organizationsType": 1,
+            "about": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 5,
+            "name": "Fundacja 'Bez domu'",
+            "organizationsType": 1,
+            "about": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 6,
+            "name": "Fundacja 'REFFORM'",
+            "organizationsType": 1,
+            "about": "Cel i misja: Wspieranie zdrowia fizycznego i psychicznego",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 7,
+            "name": "Fundacja 'Zdążyć z pomocą'",
+            "organizationsType": 1,
+            "about": "Cel i misja: Pomoc dzieciom w hospicjach",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "ngo":[
+        {
+            "id": 1,
+            "name": "Stowarzyszenie Bears of Poland",
+            "organizationsType": 2,
+            "about": "Cel i misja: Wspieranie i rozwój osób z nadwagą",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 2,
+            "name": "Federacja 'Znaki równości'",
+            "organizationsType": 2,
+            "about": "Cel i misja: Współdziałanie stowarzyszeń",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 3,
+            "name": "Stowarzyszenie 'Tęczówka",
+            "organizationsType": 2,
+            "about": "Cel i misja: Wspieranie osób transseksualnych",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 4,
+            "name": "Stowarzyszenie 'Cicha Tęcza'",
+            "organizationsType": 2,
+            "about": "Cel i misja: Wspieranie osób niesłyszących",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        }
+    ],
+    "locals":[
+        {
+            "id": 1,
+            "name": "Kraków - Czyżyny",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka na Czyżynach ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 2,
+            "name": "Kraków - Podgórze",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka na Podgórzu ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 3,
+            "name": "Kielce",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka w Kielcach ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 4,
+            "name": "Katowice - Załęże",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka w Katowicach ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 5,
+            "name": "Kraków - Prokocim",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka na Prokocimu ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 6,
+            "name": "Warszawa - Praga",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka na Pradze ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 7,
+            "name": "Warszawa - Śródmieście",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka w Śródmieściu ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 8,
+            "name": "Warszawa - Ursus",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka na Ursusie ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 9,
+            "name": "Warszawa - Praga Północ",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka na Pradze ul. XXXX",
+            "thingsType": [
+                1,
+                2,
+                3
+            ]
+        },{
+            "id": 10,
+            "name": "Wrocław",
+            "organizationsType": 3,
+            "about": "Lokalna zbiórka we Wrocławiu ul. XXXX",
             "thingsType": [
                 1,
                 2,
@@ -36,15 +243,18 @@
     "organizationsType":[
         {
             "id": 1,
-            "type": "Fundacja"
+            "type": "Fundacja",
+            "linkTo": "fundations"
         },
         {
             "id": 2,
-            "type": "Organizacja pozarządowa"
+            "type": "Organizacja pozarządowa",
+            "linkTo": "ngo"
         },
         {
             "id": 3,
-            "type": "Lokalna zbiórka"
+            "type": "Lokalna zbiórka",
+            "linkTo": "locals"
         }
     ],
     "app":{
