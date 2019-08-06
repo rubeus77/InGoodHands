@@ -234,15 +234,23 @@
     "thingsType":[
         {
             "id": 1,
-            "type": "ubrania"
+            "type": "ubrania, które nadaja się do ponownego użycia"
         },
         {
             "id": 2,
-            "type": "jedzenie"
+            "type": "ubrania do wyrzucenia"
         },
         {
             "id": 3,
-            "type": "meble"
+            "type": "zabawki"
+        },
+        {
+            "id": 4,
+            "type": "książki"
+        },
+        {
+            "id": 5,
+            "type": "inne"
         }
     ],
     "organizationsType":[

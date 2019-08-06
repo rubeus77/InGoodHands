@@ -5,7 +5,8 @@ import NotLogged from './components/not-logged';
 //import { HashRouter, Router, Link, Switch, NavLink } from 'react-router-dom';
 //import LogIn from "./components/log-in";
 //import LoginForm from "./components/login-form";
-import RegisterForm from "./components/register-form";
+//import RegisterForm from "./components/register-form";
+import BigForm from './components/big-form';
 
 class App extends Component {
   state = {
@@ -37,7 +38,8 @@ class App extends Component {
     if(this.state.session!==null){
       return(
         <div>
-          <RegisterForm log={this.handleLogout} />
+          <BigForm />
+          {/* <RegisterForm log={this.handleLogout} /> */}
           {/* <LoginForm log={this.handleLogin}/> */}
           {this.state.session?<Logged log={this.handleLogout}/>:<NotLogged log={this.handleLogin}/>}
         </div> 
