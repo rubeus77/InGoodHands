@@ -5,6 +5,11 @@
             "name": "rafal",
             "email": "rubeus77@gmail.com",
             "pass": "qwerty"
+        },{
+            "id": 2,
+            "name": "maly",
+            "email": "rubeus77@poczta.fm",
+            "pass": "QWERTY"
         }
     ],
     "fundations": [

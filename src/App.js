@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import "./App.scss";
 import Logged from './components/logged';
 import NotLogged from './components/not-logged';
+//import { HashRouter, Router, Link, Switch, NavLink } from 'react-router-dom';
+//import LogIn from "./components/log-in";
+//import LoginForm from "./components/login-form";
+import RegisterForm from "./components/register-form";
 
 class App extends Component {
   state = {
@@ -32,7 +36,11 @@ class App extends Component {
     console.log("zaraz za render: "+this.state.session)
     if(this.state.session!==null){
       return(
-        this.state.session?<Logged log={this.handleLogout}/>:<NotLogged log={this.handleLogin}/>
+        <div>
+          <RegisterForm log={this.handleLogout} />
+          {/* <LoginForm log={this.handleLogin}/> */}
+          {this.state.session?<Logged log={this.handleLogout}/>:<NotLogged log={this.handleLogin}/>}
+        </div> 
       )
     }else{
       return null;

@@ -1,0 +1,20 @@
+.Log-in {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li {
+        padding: 10px;
+        border: 1px solid gray;
+        margin: 10px 5px;
+
+        a {
+            color: gray;
+            text-decoration: none;
+        }
+    }
+
+}

@@ -33,8 +33,7 @@ class Contact extends Component {
 alert(`${this.state.name}, dziekujemy za Twoją wiadomość: \n 
 ${this.state.message} \n 
 Odpowiemy na podany przez Ciebie adres e-mail: ${this.state.email}`);
-        }
-        
+        } 
     }
     render() {
         

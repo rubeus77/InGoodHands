@@ -40,8 +40,6 @@ class Fundations extends Component {
                 this.setState({
                     fetchData: data
                 }, () => {
-                    //TODO: kod podziału na strony
-                    console.log(this.state.fetchData)
                     let count = Math.floor(this.state.fetchData.length / 3) + 1;
                     let pages = [];
                     for( let i=0; i<count; i++){
@@ -72,7 +70,7 @@ class Fundations extends Component {
                 </div>
                 <div className="bottom-box">
                     <ul>
-                        {this.state.arrWithThreeOrganizations.map( (elem,ind) => <li><FundationBox key={ind} info={elem} thingsType={this.state.thingsType}/></li> )}
+                        {this.state.arrWithThreeOrganizations.map( (elem,ind) => <li key={ind}><FundationBox key={ind} info={elem} thingsType={this.state.thingsType}/></li> )}
                     </ul>
                     {this.state.pageNumber!==0 && this.state.pageNumber.map( (elem, ind) => <button key={ind} onClick={ () => this.handlePages(ind)}>{elem}</button>)}
                 </div>
