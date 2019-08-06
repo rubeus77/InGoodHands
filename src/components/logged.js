@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Menu from './menu';
+//import Menu from './menu';
 import Contact from'./contact';
 
 class Logged extends Component{

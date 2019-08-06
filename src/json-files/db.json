@@ -5,6 +5,11 @@
             "name": "rafal",
             "email": "rubeus77@gmail.com",
             "pass": "qwerty"
+        },{
+            "id": 2,
+            "name": "maly",
+            "email": "rubeus77@poczta.fm",
+            "pass": "QWERTY"
         }
     ],
     "fundations": [
@@ -229,15 +234,23 @@
     "thingsType":[
         {
             "id": 1,
-            "type": "ubrania"
+            "type": "ubrania, które nadaja się do ponownego użycia"
         },
         {
             "id": 2,
-            "type": "jedzenie"
+            "type": "ubrania do wyrzucenia"
         },
         {
             "id": 3,
-            "type": "meble"
+            "type": "zabawki"
+        },
+        {
+            "id": 4,
+            "type": "książki"
+        },
+        {
+            "id": 5,
+            "type": "inne"
         }
     ],
     "organizationsType":[

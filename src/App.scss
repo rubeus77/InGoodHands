@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap");
 
 @import './assets/scss/ornament';
+@import './assets/scss/login';
+@import './assets/scss/loginform';
 @import './assets/scss/header';
 @import './assets/scss/yellowbar';
 @import './assets/scss/steps';
@@ -8,6 +10,7 @@
 @import './assets/scss/fundations';
 @import './assets/scss/fundationbox';
 @import './assets/scss/contact';
+@import './assets/scss/bigform';
 
 * {
   margin: 0;

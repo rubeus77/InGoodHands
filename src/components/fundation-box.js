@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class FundationBox extends Component {
     render () {
-        console.log(this.props.info);
+        
         let arrThings=[];
-        console.log(this.props.thingsType)
+        
         arrThings=this.props.thingsType.map( (elem, ind) => this.props.thingsType[ind].type);
         return (
             <div className="FundationBox">

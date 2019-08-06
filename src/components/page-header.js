@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import LogIn from "./log-in";
-import Menu from "./menu";
+//import LogIn from "./log-in";
+//import Menu from "./menu";
 import Ornament from "./ornament";
 
 class PageHeader extends Component {

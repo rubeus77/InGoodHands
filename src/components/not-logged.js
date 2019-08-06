@@ -12,7 +12,7 @@ class NotLogged extends Component{
         console.log(this.props.data);
         return(
             <>  
-                <Menu log={this.props.log} />
+                <Menu/>
                 <PageHeader />
                 <YellowBar/>
                 <Steps/>
