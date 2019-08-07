@@ -1,11 +1,16 @@
-.Log-in {
+.Menu {
     width: 100%;
     position: absolute;
-    top: -60px;
-    left: 20%;
+    top: 70px;
+    left: 50%;
     list-style: none;
     display: flex;
     flex-direction: row;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
     li {
         padding: 10px;
         border: 1px solid gray;
