@@ -28,10 +28,36 @@ class RegisterForm extends Component {
                 errors: errorList
             })
         }else{
-            //TODO: dodać fetch do zapisu
+            let userData = {
+                name: this.state.name,
+                email: this.state.email,
+                pass: this.state.password
+            }
+
+            fetch("http://localhost:3001/users", {
+                method: "POST",
+                body: JSON.stringify(userData),
+                headers:{
+                    'Content-Type':'application/json'
+                }
+            }).catch( err => alert( err ))
         }   
     }
     
+    handleBlur = () => {
+        fetch("http://localhost:3001/users")
+        .then( resp => resp.json())
+        .then( data => {
+            let arrEmails=[];
+            data.map( elem => arrEmails.push(elem.email));
+            if(arrEmails.indexOf(this.state.email) >= 0){
+                this.setState({
+                    errors: ["Podany email jest już w bazie"],
+                    email: ''
+                })
+            }
+        })
+    }
     render () {
         return (
 
@@ -40,7 +66,7 @@ class RegisterForm extends Component {
                 <form className="register-form" onSubmit={this.handleSubmit}>
                     <Ornament text={<h1>Załóż konto</h1>} />
                     <input name="name" value={this.state.name} onChange={this.handleChange} placeholder="Imię"/>
-                    <input name="email" value={this.state.email} onChange={this.handleChange} placeholder="Email"/>
+                    <input name="email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} placeholder="Email"/>
                     <input name="password" value={this.state.password} onChange={this.handleChange} placeholder="Hasło"/>
                     <input name="password2" value={this.state.password2} onChange={this.handleChange} placeholder="Powtórz hasło"/>
                     <div className="bottom-buttons">
