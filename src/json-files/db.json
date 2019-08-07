@@ -334,8 +334,8 @@
   "app": {
     "helpInNumbers": [
       16,
-      9,
-      10
+      10,
+      11
     ],
     "helpNames": [
       "Oddanych worków",
@@ -349,7 +349,8 @@
       "name": "Start",
       "href": "/",
       "to": "PageHeader"
-    },{
+    },
+    {
       "name": "O co chodzi",
       "href": "/",
       "to": "YellowBar"
@@ -358,11 +359,13 @@
       "name": "O nas",
       "href": "/",
       "to": "About"
-    },{
+    },
+    {
       "name": "Fundacje i organizacje",
       "href": "/",
       "to": "Fundations"
-    },{
+    },
+    {
       "name": "Kontakt",
       "href": "/",
       "to": "Contact"

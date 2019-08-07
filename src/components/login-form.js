@@ -40,7 +40,8 @@ class LoginForm extends Component {
             tempPass=this.state.users[arrEmails.indexOf(this.state.email)].pass;
         }
         if(tempPass===this.state.password){
-            this.props.log()
+            //this.props.log()
+            this.props.history.push("/") 
         }else{
             this.setState({
                 errors: ["Hasło i email nie pasują do siebie"]

@@ -145,7 +145,7 @@ class BigForm extends Component {
         .then( resp => resp.json())
         .then(data => {
             tempData={...data};
-            tempData.helpInNumbers[0]+= this.state.packNumber;
+            tempData.helpInNumbers[0]+= parseInt(this.state.packNumber);
             tempData.helpInNumbers[1]++;
             tempData.helpInNumbers[2]++;
   
