@@ -9,7 +9,6 @@ import Contact from "./contact";
 
 class NotLogged extends Component{
     render(){
-        console.log(this.props.data);
         return(
             <>  
                 <Menu/>

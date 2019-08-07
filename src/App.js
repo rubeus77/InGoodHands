@@ -19,7 +19,6 @@ class App extends Component {
         this.setState({
           session: data.session
         });
-        console.log("po fetch: "+this.state.session)
       })
       .catch(err => alert(err));
   }
@@ -34,7 +33,6 @@ class App extends Component {
     })
   }
   render() {
-    console.log("zaraz za render: "+this.state.session)
     if(this.state.session!==null){
       return(
         <div>
