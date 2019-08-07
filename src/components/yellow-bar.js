@@ -21,7 +21,7 @@ class YellowBar extends Component{
     }
     render() {
         return (
-            <div className="Yellow-bar">
+            <div className="YellowBar">
                 {this.state.helpInNumbers.map( (elem, ind) => <InfoBox key={ind} helpInNumbers={elem} helpNames={this.state.helpNames[ind]} />)}
             </div>
         )

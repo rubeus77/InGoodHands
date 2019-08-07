@@ -6,7 +6,7 @@ import Ornament from "./ornament";
 class PageHeader extends Component {
   render() {
     return (
-      <header>
+      <header className="PageHeader">
         <div className="header-info">
           <Ornament
             text={
