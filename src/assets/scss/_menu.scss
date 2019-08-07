@@ -1,8 +1,9 @@
 .Menu {
+    font-size: 0.8rem;
     width: 100%;
     position: absolute;
-    top: 70px;
-    left: 50%;
+    top: 60px;
+    left: 60%;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -12,12 +13,12 @@
         flex-direction: row;
     }
     li {
-        padding: 10px;
+        padding: 5px;
         border: 1px solid gray;
         margin: 10px 5px;
 
         a {
-            color: gray;
+            color: black;
             text-decoration: none;
         }
     }

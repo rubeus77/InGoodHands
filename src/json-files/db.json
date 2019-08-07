@@ -332,20 +332,40 @@
     }
   ],
   "app": {
-    "helpInNumbers":[10, 6, 7],
-    "helpNames":["Oddanych worków", "Wspartych organizacji", "Zorganizowanych zbiórek"],
+    "helpInNumbers": [
+      16,
+      9,
+      10
+    ],
+    "helpNames": [
+      "Oddanych worków",
+      "Wspartych organizacji",
+      "Zorganizowanych zbiórek"
+    ],
     "session": false
-},
+  },
   "menu": [
     {
       "name": "Start",
       "href": "/",
-      "to": "home"
+      "to": "PageHeader"
+    },{
+      "name": "O co chodzi",
+      "href": "/",
+      "to": "YellowBar"
     },
     {
       "name": "O nas",
-      "href": "/about lub #about",
-      "to": "about"
+      "href": "/",
+      "to": "About"
+    },{
+      "name": "Fundacje i organizacje",
+      "href": "/",
+      "to": "Fundations"
+    },{
+      "name": "Kontakt",
+      "href": "/",
+      "to": "Contact"
     }
   ]
 }

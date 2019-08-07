@@ -72,7 +72,9 @@ class Fundations extends Component {
                     <ul>
                         {this.state.arrWithThreeOrganizations.map( (elem,ind) => <li key={ind}><FundationBox key={ind} info={elem} thingsType={this.state.thingsType}/></li> )}
                     </ul>
+                    <div className="pagging">
                     {this.state.pageNumber!==0 && this.state.pageNumber.map( (elem, ind) => <button key={ind} onClick={ () => this.handlePages(ind)}>{elem}</button>)}
+                    </div>
                 </div>
             </div>
         )
