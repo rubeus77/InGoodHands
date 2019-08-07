@@ -1,289 +1,351 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "rafal",
-            "email": "rubeus77@gmail.com",
-            "pass": "qwerty"
-        },{
-            "id": 2,
-            "name": "maly",
-            "email": "rubeus77@poczta.fm",
-            "pass": "QWERTY"
-        }
-    ],
-    "fundations": [
-        {
-            "id": 1,
-            "name": "Fundacja Siemacha",
-            "organizationsType": 1,
-            "about": "Fundacja wspierająca dzieci z domów dziecka",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 2,
-            "name": "Fundacja 'Dbam o Zdrowie'",
-            "organizationsType": 1,
-            "about": "Celi i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 3,
-            "name": "Fundacja 'Dla dzieci'",
-            "organizationsType": 1,
-            "about": "Cel i misja: Pomoc dzieciom ubogim",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 4,
-            "name": "Fundacja 'Bez domu'",
-            "organizationsType": 1,
-            "about": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 5,
-            "name": "Fundacja 'Bez domu'",
-            "organizationsType": 1,
-            "about": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 6,
-            "name": "Fundacja 'REFFORM'",
-            "organizationsType": 1,
-            "about": "Cel i misja: Wspieranie zdrowia fizycznego i psychicznego",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 7,
-            "name": "Fundacja 'Zdążyć z pomocą'",
-            "organizationsType": 1,
-            "about": "Cel i misja: Pomoc dzieciom w hospicjach",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        }
-    ],
-    "ngo":[
-        {
-            "id": 1,
-            "name": "Stowarzyszenie Bears of Poland",
-            "organizationsType": 2,
-            "about": "Cel i misja: Wspieranie i rozwój osób z nadwagą",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 2,
-            "name": "Federacja 'Znaki równości'",
-            "organizationsType": 2,
-            "about": "Cel i misja: Współdziałanie stowarzyszeń",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 3,
-            "name": "Stowarzyszenie 'Tęczówka",
-            "organizationsType": 2,
-            "about": "Cel i misja: Wspieranie osób transseksualnych",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 4,
-            "name": "Stowarzyszenie 'Cicha Tęcza'",
-            "organizationsType": 2,
-            "about": "Cel i misja: Wspieranie osób niesłyszących",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        }
-    ],
-    "locals":[
-        {
-            "id": 1,
-            "name": "Kraków - Czyżyny",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka na Czyżynach ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 2,
-            "name": "Kraków - Podgórze",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka na Podgórzu ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 3,
-            "name": "Kielce",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka w Kielcach ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 4,
-            "name": "Katowice - Załęże",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka w Katowicach ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 5,
-            "name": "Kraków - Prokocim",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka na Prokocimu ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 6,
-            "name": "Warszawa - Praga",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka na Pradze ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 7,
-            "name": "Warszawa - Śródmieście",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka w Śródmieściu ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 8,
-            "name": "Warszawa - Ursus",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka na Ursusie ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 9,
-            "name": "Warszawa - Praga Północ",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka na Pradze ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        },{
-            "id": 10,
-            "name": "Wrocław",
-            "organizationsType": 3,
-            "about": "Lokalna zbiórka we Wrocławiu ul. XXXX",
-            "thingsType": [
-                1,
-                2,
-                3
-            ]
-        }
-    ],
-    "thingsType":[
-        {
-            "id": 1,
-            "type": "ubrania, które nadaja się do ponownego użycia"
-        },
-        {
-            "id": 2,
-            "type": "ubrania do wyrzucenia"
-        },
-        {
-            "id": 3,
-            "type": "zabawki"
-        },
-        {
-            "id": 4,
-            "type": "książki"
-        },
-        {
-            "id": 5,
-            "type": "inne"
-        }
-    ],
-    "organizationsType":[
-        {
-            "id": 1,
-            "type": "Fundacja",
-            "linkTo": "fundations"
-        },
-        {
-            "id": 2,
-            "type": "Organizacja pozarządowa",
-            "linkTo": "ngo"
-        },
-        {
-            "id": 3,
-            "type": "Lokalna zbiórka",
-            "linkTo": "locals"
-        }
-    ],
-    "app":{
-        "helpInNumbers":[10, 6, 7],
-        "helpNames":["Oddanych worków", "Wspartych organizacji", "Zorganizowanych zbiórek"],
-        "session": false
+  "users": [
+    {
+      "id": 1,
+      "name": "rafal",
+      "email": "rubeus77@gmail.com",
+      "pass": "qwerty"
     },
-    "menu":[
-        {
-            "name": "Start",
-            "href": "/",
-            "to": "home"
-        },{
-            "name": "O nas",
-            "href": "/about lub #about",
-            "to": "about"
-        }
-    ]
+    {
+      "id": 2,
+      "name": "maly",
+      "email": "rubeus77@poczta.fm",
+      "pass": "QWERTY"
+    }
+  ],
+  "fundations": [
+    {
+      "id": 1,
+      "name": "Fundacja Siemacha",
+      "organizationsType": 1,
+      "about": "Fundacja wspierająca dzieci z domów dziecka",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kraków",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 2,
+      "name": "Fundacja 'Dbam o Zdrowie'",
+      "organizationsType": 1,
+      "about": "Celi i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "osoby starsze"
+    },
+    {
+      "id": 3,
+      "name": "Fundacja 'Dla dzieci'",
+      "organizationsType": 1,
+      "about": "Cel i misja: Pomoc dzieciom ubogim",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Poznań",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 4,
+      "name": "Fundacja 'Bez domu'",
+      "organizationsType": 1,
+      "about": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "bezdomni"
+    },
+    {
+      "id": 5,
+      "name": "Fundacja 'Bez domu'",
+      "organizationsType": 1,
+      "about": "Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kraków",
+      "forWho": "bezdomni"
+    },
+    {
+      "id": 6,
+      "name": "Fundacja 'REFFORM'",
+      "organizationsType": 1,
+      "about": "Cel i misja: Wspieranie zdrowia fizycznego i psychicznego",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "osoby strsze"
+    },
+    {
+      "id": 7,
+      "name": "Fundacja 'Zdążyć z pomocą'",
+      "organizationsType": 1,
+      "about": "Cel i misja: Pomoc dzieciom w hospicjach",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "dzieci"
+    }
+  ],
+  "ngo": [
+    {
+      "id": 1,
+      "name": "Stowarzyszenie Bears of Poland",
+      "organizationsType": 2,
+      "about": "Cel i misja: Wspieranie i rozwój osób z nadwagą",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Polska",
+      "forWho": "osoby starsze"
+    },
+    {
+      "id": 2,
+      "name": "Federacja 'Znaki równości'",
+      "organizationsType": 2,
+      "about": "Cel i misja: Współdziałanie stowarzyszeń",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kraków",
+      "forWho": "osoby starsze"
+    },
+    {
+      "id": 3,
+      "name": "Stowarzyszenie 'Tęczówka",
+      "organizationsType": 2,
+      "about": "Cel i misja: Wspieranie osób transseksualnych",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Katowice",
+      "forWho": "niepełnosprawni"
+    },
+    {
+      "id": 4,
+      "name": "Stowarzyszenie 'Cicha Tęcza'",
+      "organizationsType": 2,
+      "about": "Cel i misja: Wspieranie osób niesłyszących",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Poznań",
+      "forWho": "niepełnosprawni"
+    }
+  ],
+  "locals": [
+    {
+      "id": 1,
+      "name": "Kraków - Czyżyny",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka na Czyżynach ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kraków",
+      "forWho": "samotne matki"
+    },
+    {
+      "id": 2,
+      "name": "Kraków - Podgórze",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka na Podgórzu ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kraków",
+      "forWho": "bezdomni"
+    },
+    {
+      "id": 3,
+      "name": "Kielce",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka w Kielcach ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kielce",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 4,
+      "name": "Katowice - Załęże",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka w Katowicach ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Katowice",
+      "forWho": "samotne matki"
+    },
+    {
+      "id": 5,
+      "name": "Kraków - Prokocim",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka na Prokocimu ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Kraków",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 6,
+      "name": "Warszawa - Praga",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka na Pradze ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 7,
+      "name": "Warszawa - Śródmieście",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka w Śródmieściu ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 8,
+      "name": "Warszawa - Ursus",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka na Ursusie ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "bezdomni"
+    },
+    {
+      "id": 9,
+      "name": "Warszawa - Praga Północ",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka na Pradze ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Warszawa",
+      "forWho": "dzieci"
+    },
+    {
+      "id": 10,
+      "name": "Wrocław",
+      "organizationsType": 3,
+      "about": "Lokalna zbiórka we Wrocławiu ul. XXXX",
+      "thingsType": [
+        1,
+        2,
+        3
+      ],
+      "place": "Wrocław",
+      "forWho": "dzieci"
+    }
+  ],
+  "thingsType": [
+    {
+      "id": 1,
+      "type": "ubrania, które nadaja się do ponownego użycia"
+    },
+    {
+      "id": 2,
+      "type": "ubrania do wyrzucenia"
+    },
+    {
+      "id": 3,
+      "type": "zabawki"
+    },
+    {
+      "id": 4,
+      "type": "książki"
+    },
+    {
+      "id": 5,
+      "type": "inne"
+    }
+  ],
+  "organizationsType": [
+    {
+      "id": 1,
+      "type": "Fundacja",
+      "linkTo": "fundations"
+    },
+    {
+      "id": 2,
+      "type": "Organizacja pozarządowa",
+      "linkTo": "ngo"
+    },
+    {
+      "id": 3,
+      "type": "Lokalna zbiórka",
+      "linkTo": "locals"
+    }
+  ],
+  "app": {
+    "helpInNumbers":[10, 6, 7],
+    "helpNames":["Oddanych worków", "Wspartych organizacji", "Zorganizowanych zbiórek"],
+    "session": false
+},
+  "menu": [
+    {
+      "name": "Start",
+      "href": "/",
+      "to": "home"
+    },
+    {
+      "name": "O nas",
+      "href": "/about lub #about",
+      "to": "about"
+    }
+  ]
 }
