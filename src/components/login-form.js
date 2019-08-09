@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Ornament from './ornament';
-import { HashRouter,  Link } from 'react-router-dom';
+import { HashRouter as Router,  Link } from 'react-router-dom';
 
 class LoginForm extends Component {
     state ={
@@ -41,7 +41,7 @@ class LoginForm extends Component {
         }
         if(tempPass===this.state.password){
             //this.props.log()
-            this.props.history.push("/") 
+            this.props.history.push("/give-stuff") 
         }else{
             this.setState({
                 errors: ["Hasło i email nie pasują do siebie"]
@@ -50,7 +50,7 @@ class LoginForm extends Component {
     }
     render () {
         return (
-            <HashRouter>
+            <Router>
                 <div className="LoginForm">
                     <form className="login-form" onSubmit={this.handleSubmit}>
                         <Ornament text={<h1>Zaloguj się</h1>} />
@@ -65,7 +65,7 @@ class LoginForm extends Component {
                     </form>
                     
                 </div>
-            </HashRouter>
+            </Router>
         )
     }
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { HashRouter as Router, Link } from 'react-router-dom';
+
 import Ornament from './ornament';
 import imgStep1 from '../assets/images/select.jpg';
 import imgStep2 from '../assets/images/pack.png';
@@ -45,13 +47,15 @@ class Steps extends Component {
     }
     render () {
         return (
+            <Router>
             <div className="Steps">
                 <Ornament text={<h1>Wystarczą 4 proste kroki</h1>} />
                 <div className="steps-middle-box">
                     {this.state.steps.map( (elem, ind) => <Box key={ind} info={elem} />)}
                 </div>
-                <button>Załóż konto</button>
+                <button><Link to="/register">Załóż konto</Link></button>
             </div>
+            </Router>
         )
     }
 }

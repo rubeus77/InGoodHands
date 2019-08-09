@@ -2,6 +2,7 @@ import React, { Component } from "react";
 //import LogIn from "./log-in";
 //import Menu from "./menu";
 import Ornament from "./ornament";
+import { HashRouter as Router, Link } from 'react-router-dom';
 
 class PageHeader extends Component {
   render() {
@@ -16,10 +17,12 @@ class PageHeader extends Component {
               </React.Fragment>
             }
           />
+          <Router>
           <div className="header-buttons">
-            <button><p>Oddaj</p><p>rzeczy</p></button>
-            <button><p>Zorganizuj</p><p>zbiórkę</p></button>
+            <button><Link to="/login"><p>Oddaj</p><p>rzeczy</p></Link></button>
+            <button><Link to="/login"><p>Zorganizuj</p><p>zbiórkę</p></Link></button>
           </div>
+          </Router>
         </div>
       </header>
     );
