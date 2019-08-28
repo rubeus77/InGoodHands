@@ -4,13 +4,17 @@
       "id": 1,
       "name": "rafal",
       "email": "rubeus77@gmail.com",
-      "pass": "qwerty"
+      "pass": "qwerty",
+      "bags": 0,
+      "fundations": []
     },
     {
       "id": 2,
       "name": "maly",
       "email": "rubeus77@poczta.fm",
-      "pass": "QWERTY"
+      "pass": "QWERTY",
+      "bags": 0,
+      "fundations": []
     }
   ],
   "fundations": [
