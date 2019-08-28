@@ -11,7 +11,7 @@ class NotLogged extends Component{
     render(){
         return(
             <>  
-                <Menu/>
+                <Menu call={true}/>
                 <PageHeader />
                 <YellowBar/>
                 <Steps/>

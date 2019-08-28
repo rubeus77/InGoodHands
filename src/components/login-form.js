@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Ornament from './ornament';
 import { HashRouter as Router,  Link } from 'react-router-dom';
+import Menu from './menu';
 
 class LoginForm extends Component {
     state ={
@@ -51,6 +52,7 @@ class LoginForm extends Component {
     render () {
         return (
             <Router>
+                <Menu />
                 <div className="LoginForm">
                     <form className="login-form" onSubmit={this.handleSubmit}>
                         <Ornament text={<h1>Zaloguj się</h1>} />

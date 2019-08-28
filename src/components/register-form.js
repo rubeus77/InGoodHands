@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Ornament from './ornament';
-import { HashRouter,  Link } from 'react-router-dom';
+import { HashRouter,  Link, Redirect} from 'react-router-dom';
+import Menu from "./menu";
 
 class RegisterForm extends Component {
     state ={
@@ -8,7 +9,8 @@ class RegisterForm extends Component {
         password: "",
         password2: "",
         name: "",
-        errors: []
+        errors: [],
+        correctRegistered: false
     }
     handleChange = (event) =>{
         this.setState({
@@ -31,7 +33,9 @@ class RegisterForm extends Component {
             let userData = {
                 name: this.state.name,
                 email: this.state.email,
-                pass: this.state.password
+                pass: this.state.password,
+                bags: 0,
+                fundatios:[]
             }
 
             fetch("http://localhost:3001/users", {
@@ -40,7 +44,10 @@ class RegisterForm extends Component {
                 headers:{
                     'Content-Type':'application/json'
                 }
-            }).catch( err => alert( err ))
+            }).catch( err => alert( err ));
+            this.setState({
+                correctRegistered: true
+            })
         }   
     }
     
@@ -59,30 +66,35 @@ class RegisterForm extends Component {
         })
     }
     render () {
-        return (
+        if (this.state.correctRegistered) {
+            return <Redirect to={{path:"/login", info:"Udane utworzenie konta" }}/>
+        }else {
+            return (
 
-            <HashRouter>
-            <div className="LoginForm">
-                <form className="register-form" onSubmit={this.handleSubmit}>
-                    <Ornament text={<h1>Załóż konto</h1>} />
-                    <input name="name" value={this.state.name} onChange={this.handleChange} placeholder="Imię"/>
-                    <input name="email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} placeholder="Email"/>
-                    <input name="password" value={this.state.password} onChange={this.handleChange} placeholder="Hasło"/>
-                    <input name="password2" value={this.state.password2} onChange={this.handleChange} placeholder="Powtórz hasło"/>
-                    <div className="bottom-buttons">
-                        <button><Link to="/login">Zaloguj się</Link></button>
-                        <button type="submit">Załóż konto</button>
-                    </div>
-                    {this.state.errors.length>0 && (
-                            <ul className="errors-box">
-                              {this.state.errors.map(elem=><li key={elem}>{elem}</li>)}
-                            </ul>
-                            )}
-                </form>
-                
-            </div>
-        </HashRouter>
-        )
+                <HashRouter>
+                    <Menu/>
+                <div className="LoginForm">
+                    <form className="register-form" onSubmit={this.handleSubmit}>
+                        <Ornament text={<h1>Załóż konto</h1>} />
+                        <input name="name" value={this.state.name} onChange={this.handleChange} placeholder="Imię"/>
+                        <input name="email" value={this.state.email} onChange={this.handleChange} onBlur={this.handleBlur} placeholder="Email"/>
+                        <input name="password" value={this.state.password} onChange={this.handleChange} placeholder="Hasło"/>
+                        <input name="password2" value={this.state.password2} onChange={this.handleChange} placeholder="Powtórz hasło"/>
+                        <div className="bottom-buttons">
+                            <button><Link to="/login">Zaloguj się</Link></button>
+                            <button type="submit">Załóż konto</button>
+                        </div>
+                        {this.state.errors.length>0 && (
+                                <ul className="errors-box">
+                                  {this.state.errors.map(elem=><li key={elem}>{elem}</li>)}
+                                </ul>
+                                )}
+                    </form>  
+                </div>
+            </HashRouter>
+            )
+        }
+        
     }
 }
 
