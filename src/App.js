@@ -6,7 +6,7 @@ import { HashRouter as Router, Route, Link, Switch, NavLink } from 'react-router
 //import LogIn from "./components/log-in";
 import LoginForm from "./components/login-form";
 import RegisterForm from "./components/register-form";
-import BigForm from './components/big-form';
+//import BigForm from './components/big-form';
 
 class App extends Component {
   state = {
@@ -43,7 +43,7 @@ class App extends Component {
             <Route exact path="/" component={NotLogged} />
             <Route path="/register" component={RegisterForm} />
             <Route path="/login" component={LoginForm} />
-            <Route path="/give-stuff" component={BigForm} />
+            <Route path="/give-stuff" component={Logged} />
           </Switch>
         </Router> 
       )

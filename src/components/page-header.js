@@ -19,8 +19,8 @@ class PageHeader extends Component {
           />
           <Router>
           <div className="header-buttons">
-            <button><Link to="/login"><p>Oddaj</p><p>rzeczy</p></Link></button>
-            <button><Link to="/login"><p>Zorganizuj</p><p>zbiórkę</p></Link></button>
+            <button><Link to={this.props.log?"/give-stuff":"/login"}><p>Oddaj</p><p>rzeczy</p></Link></button>
+            <button><Link to={this.props.log?"/give-stuff":"/login"}><p>Zorganizuj</p><p>zbiórkę</p></Link></button>
           </div>
           </Router>
         </div>

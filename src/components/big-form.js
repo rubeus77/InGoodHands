@@ -166,69 +166,74 @@ class BigForm extends Component {
                 return(
                     <div className="BigForm">
                         <BigFormBar info={this.state.info[this.state.steps]} />
-                        <p>Krok 1/4</p>
-                        <div>
-                            <h2>Zaznacz co chcesz oddać:</h2>
-                            {this.state.thingsType!==null && (
-                                <ul>
-                                 {this.state.thingsType.map( (elem, ind) => <li key={ind}>
-                                    <input type="checkbox" onChange={ e => this.handleSelectThings (e, ind)} key={ind} checked={this.state.selectedThings[ind]}/>
-                                    {elem.type}
-                                 </li> )}
-                                </ul>
-                            )}
+                        <div className="BigFormPage">
+                            <p>Krok 1/4</p>
+                            <div>
+                                <h2>Zaznacz co chcesz oddać:</h2>
+                                {this.state.thingsType!==null && (
+                                    <ul>
+                                    {this.state.thingsType.map( (elem, ind) => <li key={ind}>
+                                        <input type="checkbox" onChange={ e => this.handleSelectThings (e, ind)} key={ind} checked={this.state.selectedThings[ind]}/>
+                                        <span>{elem.type}</span>
+                                    </li> )}
+                                    </ul>
+                                )}
+                            </div>
+                            <div>
+                                <button onClick={this.handleNextPage}>Dalej</button>
+                            </div>
                         </div>
-                        <div>
-                            <button onClick={this.handleNextPage}>Dalej</button>
-                        </div>
-                        
                     </div>
                 )
             case 1:
                 return(
                     <div className="BigForm">
                         <BigFormBar info={this.state.info[this.state.steps]} />
-                        <p>Krok 2/4</p>
-                        
-                        <div>
-                            <h2> Podaj liczbę 60 l worków, w które spakowałes/aś rzeczy:</h2>
-                            Liczba 60 l worków: 
-                            <select name="packNumber" onChange={this.handleChange}>
-                                <option value="-1">- wybierz -</option>
-                                {this.state.forSelect.map( (elem, ind)=> <option value={ind + 1} key={ind}>{ind + 1}</option> )}
-                                <option value="100">>10</option>  
-                            </select>
-                        </div>
-                        <div>
-                            <button onClick={this.handlePrevPage}>Wstecz</button>
-                            <button onClick={this.handleNextPage}>Dalej</button>
+                        <div className="BigFormPage">    
+                            <p>Krok 2/4</p>
+                            <div>
+                                <h2> Podaj liczbę 60 l worków, w które spakowałes/aś rzeczy:</h2>
+                                <span>Liczba 60 l worków: </span>
+                                <select name="packNumber" onChange={this.handleChange}>
+                                    <option value="-1">- wybierz -</option>
+                                    {this.state.forSelect.map( (elem, ind)=> <option value={ind + 1} key={ind}>{ind + 1}</option> )}
+                                    <option value="100">>10</option>  
+                                </select>
+                            </div>
+                            <div className="BigFormButtons">
+                                <button onClick={this.handlePrevPage}>Wstecz</button>
+                                <button onClick={this.handleNextPage}>Dalej</button>
+                            </div>
                         </div>
                     </div>
                 )
             case 2:
                 return(
                     <div className="BigForm">
-                    <BigFormBar info={this.state.info[this.state.steps]} />
-                    <p>Krok 3/4</p>
-                    
-                        <div>
-                            <h2>Lokalizacja:</h2> 
-                            <select name="selectedPlace" onChange={this.handleChange}>
-                                <option value="">- wybierz -</option>
-                                {this.state.place.map( (elem, ind)=> <option value={elem} key={ind}>{elem}</option> )}  
-                            </select>
-                            <p>Komu chcesz pomóc ?</p>
-                            {this.state.forWho.map( (elem) => <button key={elem} onClick={this.handleChange} value={elem}>{elem}</button>)}
-                            <p>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
-                            <input type="text" name="organizationNameText" onChange={this.handleChange} />
+                        <BigFormBar info={this.state.info[this.state.steps]} />
+                        <div className="BigFormPage">
+                            <p>Krok 3/4</p>
+                                <div>
+                                    <h2>Lokalizacja:</h2> 
+                                    <select name="selectedPlace" onChange={this.handleChange}>
+                                        <option value="">- wybierz -</option>
+                                        {this.state.place.map( (elem, ind)=> <option value={elem} key={ind}>{elem}</option> )}  
+                                    </select>
+                                    <p>Komu chcesz pomóc ?</p>
+                                    <div className="BigFormButtons">
+                                        {this.state.forWho.map( (elem) => <button key={elem} onClick={this.handleChange} value={elem} className="small">{elem}</button>)}
+                                    </div>
+                                    <p>Wpisz nazwę konkretnej organizacji (opcjonalnie)</p>
+                                    <input type="text" name="organizationNameText" onChange={this.handleChange} />
+                                </div>
+                            
+                            
+                            <div className="BigFormButtons">
+                                <button onClick={this.handlePrevPage}>Wstecz</button>
+                                <button onClick={this.handleSearch}>Szukaj</button>
+                            </div>
                         </div>
-                    
-                    
-                    <div>
-                        <button onClick={this.handlePrevPage}>Wstecz</button>
-                        <button onClick={this.handleSearch}>Szukaj</button>
                     </div>
-                </div>
                 )
             case 3:
                 return(

@@ -7,12 +7,25 @@ import About from './about';
 import Functions from './fundations-list';
 import Contact from "./contact";
 
+
 class NotLogged extends Component{
+    state = {
+        sessionData:{}
+    }
+    componentDidMount() {
+        fetch("http://localhost:3001/app").then(res => res.json())
+          .then(data => {
+            this.setState({
+              sessionData: data
+            });
+          })
+          .catch(err => alert(err));
+      }
     render(){
         return(
             <>  
-                <Menu call={true}/>
-                <PageHeader />
+                <Menu call={true} />
+                <PageHeader log={this.state.sessionData.session}/>
                 <YellowBar/>
                 <Steps/>
                 <About/>
